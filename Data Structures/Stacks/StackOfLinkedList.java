@@ -15,7 +15,6 @@ class StackOfLinkedList {
         stack.push(2);
         stack.push(3);
         stack.push(4);
-        stack.push(5);
 
         stack.printStack();
 
@@ -23,8 +22,6 @@ class StackOfLinkedList {
 
         stack.pop();
         stack.pop();
-
-        System.out.println("Top element of stack currently is: " + stack.peek());
 
     }
 
@@ -78,20 +75,12 @@ class LinkedListStack {
         System.out.println("Popped element is: " + temp.data);
     }
 
-    public int peek() {
-      if (getSize() == 0) {
-        return -1;
-      }
-
-      return head.data;
-    }
-
     public void printStack() {
 
         Node temp = head;
         System.out.println("Stack is printed as below: ");
         while (temp != null) {
-            System.out.println(temp.data + " ");
+            System.out.print(temp.data + " ");
             temp = temp.next;
         }
         System.out.println();
@@ -105,5 +94,5 @@ class LinkedListStack {
     public int getSize() {
         return size;
     }
-
+    
 }
